@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="postgres@127.0.0.1">
+  <database-model serializer="dbm" rdbms="POSTGRES" format-version="4.7">
+    <root id="1"/>
+    <database id="2" parent="1" name="postgres">
+      <ObjectId>12411</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <role id="3" parent="1" name="postgres">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <Replication>1</Replication>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <BypassRls>1</BypassRls>
+    </role>
+    <schema id="4" parent="2" name="public">
+      <ObjectId>2200</ObjectId>
+      <IntrospectionTimestamp>2018-03-29.01:54:55.227</IntrospectionTimestamp>
+      <IntrospectionStateNumber>693</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="5" parent="2" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+    </schema>
+    <schema id="6" parent="2" name="pg_toast">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="7" parent="2" name="pg_temp_1">
+      <ObjectId>11816</ObjectId>
+    </schema>
+    <schema id="8" parent="2" name="pg_toast_temp_1">
+      <ObjectId>11817</ObjectId>
+    </schema>
+    <schema id="9" parent="2" name="information_schema">
+      <ObjectId>12119</ObjectId>
+    </schema>
+    <table id="10" parent="4" name="dept">
+      <ObjectId>16387</ObjectId>
+      <StateNumber>675</StateNumber>
+    </table>
+    <table id="11" parent="4" name="emp">
+      <ObjectId>16384</ObjectId>
+      <StateNumber>660</StateNumber>
+    </table>
+    <table id="12" parent="4" name="t1">
+      <ObjectId>16390</ObjectId>
+      <StateNumber>680</StateNumber>
+    </table>
+    <table id="13" parent="4" name="t10">
+      <ObjectId>16393</ObjectId>
+      <StateNumber>682</StateNumber>
+    </table>
+    <table id="14" parent="4" name="t100">
+      <ObjectId>16396</ObjectId>
+      <StateNumber>693</StateNumber>
+    </table>
+    <column id="15" parent="10" name="deptno">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>675</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="16" parent="10" name="dname">
+      <Position>2</Position>
+      <DataType>varchar(14)|0</DataType>
+      <StateNumber>675</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="17" parent="10" name="loc">
+      <Position>3</Position>
+      <DataType>varchar(13)|0</DataType>
+      <StateNumber>675</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="18" parent="11" name="empno">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>660</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="19" parent="11" name="ename">
+      <Position>2</Position>
+      <DataType>varchar(10)|0</DataType>
+      <StateNumber>660</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="20" parent="11" name="job">
+      <Position>3</Position>
+      <DataType>varchar(9)|0</DataType>
+      <StateNumber>660</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="21" parent="11" name="mgr">
+      <Position>4</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>660</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="22" parent="11" name="hiredate">
+      <Position>5</Position>
+      <DataType>date|0</DataType>
+      <StateNumber>660</StateNumber>
+      <TypeId>1082</TypeId>
+    </column>
+    <column id="23" parent="11" name="sal">
+      <Position>6</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>660</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="24" parent="11" name="comm">
+      <Position>7</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>660</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="25" parent="11" name="deptno">
+      <Position>8</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>660</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="26" parent="12" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>680</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="27" parent="13" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>682</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="28" parent="14" name="id">
+      <Position>1</Position>
+      <DataType>integer|0</DataType>
+      <StateNumber>693</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+  </database-model>
+</dataSource>
