@@ -8,79 +8,84 @@
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET client_encoding = 'UTF8';
-SET standard_conforming_strings = on;
-SELECT pg_catalog.set_config('search_path', '', false);
-SET check_function_bodies = false;
-SET client_min_messages = warning;
-SET row_security = off;
+SET standard_conforming_strings = ON;
+SELECT pg_catalog.set_config('search_path', '', FALSE);
+SET check_function_bodies = FALSE;
+SET client_min_messages = WARNING;
+SET row_security = OFF;
 
 SET default_tablespace = '';
 
-SET default_with_oids = false;
+SET default_with_oids = FALSE;
 
 --
 -- Name: dept; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.dept (
-    deptno integer,
-    dname character varying(14),
-    loc character varying(13)
+  deptno INTEGER,
+  dname  CHARACTER VARYING(14),
+  loc    CHARACTER VARYING(13)
 );
 
 
-ALTER TABLE public.dept OWNER TO postgres;
+ALTER TABLE public.dept
+  OWNER TO postgres;
 
 --
 -- Name: emp; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.emp (
-    empno integer NOT NULL,
-    ename character varying(10),
-    job character varying(9),
-    mgr integer,
-    hiredate date,
-    sal integer,
-    comm integer,
-    deptno integer
+  empno    INTEGER NOT NULL,
+  ename    CHARACTER VARYING(10),
+  job      CHARACTER VARYING(9),
+  mgr      INTEGER,
+  hiredate DATE,
+  sal      INTEGER,
+  comm     INTEGER,
+  deptno   INTEGER
 );
 
 
-ALTER TABLE public.emp OWNER TO postgres;
+ALTER TABLE public.emp
+  OWNER TO postgres;
 
 --
 -- Name: t1; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.t1 (
-    id integer
+  id INTEGER
 );
 
 
-ALTER TABLE public.t1 OWNER TO postgres;
+ALTER TABLE public.t1
+  OWNER TO postgres;
 
 --
 -- Name: t10; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.t10 (
-    id integer
+  id INTEGER
 );
 
 
-ALTER TABLE public.t10 OWNER TO postgres;
+ALTER TABLE public.t10
+  OWNER TO postgres;
 
 --
 -- Name: t100; Type: TABLE; Schema: public; Owner: postgres
 --
 
 CREATE TABLE public.t100 (
-    id integer
+  id INTEGER
 );
 
 
-ALTER TABLE public.t100 OWNER TO postgres;
+ALTER TABLE public.t100
+  OWNER TO postgres;
 
 --
 -- Data for Name: dept; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -91,33 +96,44 @@ INSERT INTO public.dept (deptno, dname, loc) VALUES (20, 'RESEARCH', 'DALLAS');
 INSERT INTO public.dept (deptno, dname, loc) VALUES (30, 'SALES', 'CHICAGO');
 INSERT INTO public.dept (deptno, dname, loc) VALUES (40, 'OPERATIONS', 'BOSTON');
 
-
 --
 -- Data for Name: emp; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7369, 'SMITH', 'CLERK', 7902, '1980-12-17', 800, NULL, 20);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7499, 'ALLEN', 'SALESMAN', 7698, '1981-02-20', 1600, 300, 30);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7521, 'WARD', 'SALESMAN', 7698, '1981-02-22', 1250, 500, 30);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7566, 'JONES', 'MANAGER', 7839, '1981-04-02', 2975, NULL, 20);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7654, 'MARTIN', 'SALESMAN', 7698, '1981-09-28', 1250, 1400, 30);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7698, 'BLAKE', 'MANAGER', 7839, '1981-05-01', 2850, NULL, 30);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7782, 'CLARK', 'MANAGER', 7839, '1981-06-09', 2450, NULL, 10);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7788, 'SCOTT', 'ANALYST', 7566, '1982-12-09', 3000, NULL, 20);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7839, 'KING', 'PRESIDENT', NULL, '1981-11-17', 5000, NULL, 10);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7844, 'TURNER', 'SALESMAN', 7698, '1981-09-08', 1500, 0, 30);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7876, 'ADAMS', 'CLERK', 7788, '1983-01-12', 1100, NULL, 20);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7900, 'JAMES', 'CLERK', 7698, '1981-12-03', 950, NULL, 30);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7902, 'FORD', 'ANALYST', 7566, '1981-12-03', 3000, NULL, 20);
-INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno) VALUES (7934, 'MILLER', 'CLERK', 7782, '1982-01-23', 1300, NULL, 10);
-
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7369, 'SMITH', 'CLERK', 7902, '1980-12-17', 800, NULL, 20);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7499, 'ALLEN', 'SALESMAN', 7698, '1981-02-20', 1600, 300, 30);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7521, 'WARD', 'SALESMAN', 7698, '1981-02-22', 1250, 500, 30);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7566, 'JONES', 'MANAGER', 7839, '1981-04-02', 2975, NULL, 20);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7654, 'MARTIN', 'SALESMAN', 7698, '1981-09-28', 1250, 1400, 30);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7698, 'BLAKE', 'MANAGER', 7839, '1981-05-01', 2850, NULL, 30);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7782, 'CLARK', 'MANAGER', 7839, '1981-06-09', 2450, NULL, 10);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7788, 'SCOTT', 'ANALYST', 7566, '1982-12-09', 3000, NULL, 20);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7839, 'KING', 'PRESIDENT', NULL, '1981-11-17', 5000, NULL, 10);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7844, 'TURNER', 'SALESMAN', 7698, '1981-09-08', 1500, 0, 30);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7876, 'ADAMS', 'CLERK', 7788, '1983-01-12', 1100, NULL, 20);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7900, 'JAMES', 'CLERK', 7698, '1981-12-03', 950, NULL, 30);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7902, 'FORD', 'ANALYST', 7566, '1981-12-03', 3000, NULL, 20);
+INSERT INTO public.emp (empno, ename, job, mgr, hiredate, sal, comm, deptno)
+VALUES (7934, 'MILLER', 'CLERK', 7782, '1982-01-23', 1300, NULL, 10);
 
 --
 -- Data for Name: t1; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
 INSERT INTO public.t1 (id) VALUES (1);
-
 
 --
 -- Data for Name: t10; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -133,7 +149,6 @@ INSERT INTO public.t10 (id) VALUES (7);
 INSERT INTO public.t10 (id) VALUES (8);
 INSERT INTO public.t10 (id) VALUES (9);
 INSERT INTO public.t10 (id) VALUES (10);
-
 
 --
 -- Data for Name: t100; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -241,6 +256,16 @@ INSERT INTO public.t100 (id) VALUES (99);
 INSERT INTO public.t100 (id) VALUES (100);
 
 
+CREATE TABLE public.emp_bonus (
+  empno    INTEGER,
+  recieved DATE,
+  type     INTEGER
+);
+
+INSERT INTO public.emp_bonus (empno, recieved, type) VALUES (7369, '2005-03-14', 1);
+INSERT INTO public.emp_bonus (empno, recieved, type) VALUES (7900, '2005-03-14', 2);
+INSERT INTO public.emp_bonus (empno, recieved, type) VALUES (7788, '2005-03-14', 3);
+
 --
 -- Name: SCHEMA public; Type: ACL; Schema: -; Owner: postgres
 --
@@ -249,7 +274,6 @@ REVOKE ALL ON SCHEMA public FROM PUBLIC;
 REVOKE ALL ON SCHEMA public FROM postgres;
 GRANT ALL ON SCHEMA public TO postgres;
 GRANT ALL ON SCHEMA public TO PUBLIC;
-
 
 --
 -- PostgreSQL database dump complete
