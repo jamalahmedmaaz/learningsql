@@ -24,6 +24,19 @@ ORDER BY is_null DESC, comm;
 -- order by is_null desc, comm desc;
 
 
+-- Check the below query to find what is happening.
+SELECT
+  ename,
+  sal,
+  comm,
+  (CASE WHEN comm IS NULL
+    THEN 0
+   ELSE 1 END) AS is_null
+FROM emp;
+
+----End
+
+
 SELECT
   ename,
   sal,
