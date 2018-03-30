@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d7d29808-43c4-4b57-9809-6b5fa7ad2e64" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/multipletables/nullsInOperationsAndComparisons.sql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reportingAndWarehousing/pivotingResultSetIntoMultipleRows.sql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/reportingAndWarehousing/pivotingResultSetIntoOneRow.sql" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,21 +50,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="returnMissingDataFromMultipleTables.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/multipletables/returnMissingDataFromMultipleTables.sql">
+      <file leaf-file-name="pivotingResultSetIntoOneRow.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/reportingAndWarehousing/pivotingResultSetIntoOneRow.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="549">
+              <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nullsInOperationsAndComparisons.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/multipletables/nullsInOperationsAndComparisons.sql">
+      <file leaf-file-name="pivotingResultSetIntoMultipleRows.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/reportingAndWarehousing/pivotingResultSetIntoMultipleRows.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" column="55" lean-forward="false" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+            <state relative-caret-position="567">
+              <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datadump.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/datadump.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="26">
+              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -75,7 +87,13 @@
       <find>bonus</find>
       <find>hiredate</find>
       <find>date</find>
+      <find>sum</find>
+      <find>emp</find>
+      <find>emp</find>
     </findStrings>
+    <replaceStrings>
+      <replace>max</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,10 +124,12 @@
         <option value="$PROJECT_DIR$/multipletables/nonInterferingJoins.sql" />
         <option value="$PROJECT_DIR$/multipletables/determineTwoTablesHaveSameData.sql" />
         <option value="$PROJECT_DIR$/multipletables/avoidCartesianProducts.sql" />
-        <option value="$PROJECT_DIR$/database/datadump.sql" />
         <option value="$PROJECT_DIR$/multipletables/aggregationPlusJoining.sql" />
         <option value="$PROJECT_DIR$/multipletables/returnMissingDataFromMultipleTables.sql" />
         <option value="$PROJECT_DIR$/multipletables/nullsInOperationsAndComparisons.sql" />
+        <option value="$PROJECT_DIR$/reportingAndWarehousing/pivotingResultSetIntoOneRow.sql" />
+        <option value="$PROJECT_DIR$/database/datadump.sql" />
+        <option value="$PROJECT_DIR$/reportingAndWarehousing/pivotingResultSetIntoMultipleRows.sql" />
       </list>
     </option>
   </component>
@@ -177,12 +197,7 @@
             <path>
               <item name="learningsql" type="b2602c69:ProjectViewProjectNode" />
               <item name="learningsql" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="learningsql" type="b2602c69:ProjectViewProjectNode" />
-              <item name="learningsql" type="462c0819:PsiDirectoryNode" />
-              <item name="multipletables" type="462c0819:PsiDirectoryNode" />
+              <item name="reportingAndWarehousing" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -318,7 +333,7 @@
       <workItem from="1522277407310" duration="2689000" />
       <workItem from="1522330467385" duration="76000" />
       <workItem from="1522330563319" duration="7611000" />
-      <workItem from="1522363635488" duration="11550000" />
+      <workItem from="1522363635488" duration="18314000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <created>1522269130444</created>
@@ -436,7 +451,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24993000" />
+    <option name="totallyTimeSpent" value="31757000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1602" height="874" extended-state="6" />
@@ -448,7 +463,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gerrit" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -484,7 +499,7 @@
       <window_info id="Gerrit" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -733,14 +748,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/datadump.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="258" column="0" lean-forward="false" selection-start-line="258" selection-start-column="0" selection-end-line="267" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/multipletables/aggregationPlusJoining.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -759,8 +766,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/multipletables/nullsInOperationsAndComparisons.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="1" column="55" lean-forward="false" selection-start-line="1" selection-start-column="55" selection-end-line="1" selection-end-column="55" />
+        <state relative-caret-position="378">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reportingAndWarehousing/pivotingResultSetIntoOneRow.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="72" column="25" lean-forward="true" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/datadump.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="26">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reportingAndWarehousing/pivotingResultSetIntoMultipleRows.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="73" column="0" lean-forward="true" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
           <folding />
         </state>
       </provider>
