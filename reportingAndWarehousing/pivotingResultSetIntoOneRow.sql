@@ -36,6 +36,8 @@ FROM emp
 GROUP BY deptno;
 
 
+-- result
+
 SELECT
   sum(CASE
       WHEN deptno = 10
