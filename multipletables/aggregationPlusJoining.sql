@@ -151,3 +151,4 @@ GROUP BY deptno;
 
 
 DROP TABLE emp_bonus1;
+DROP TABLE emp_bonus2;
