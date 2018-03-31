@@ -35,7 +35,6 @@ SELECT
 FROM emp
 GROUP BY deptno;
 
-
 -- result
 
 SELECT
